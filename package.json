@@ -1,21 +1,31 @@
 {
-  "name": "deepeval-demo",
+  "name": "ragas-evaluation-system",
   "version": "1.0.0",
-  "type": "module",
+  "description": "RAGAS Evaluation System - Frontend + Backend + Python",
+  "private": true,
   "scripts": {
-    "dev": "node --loader ts-node/esm --no-warnings=ExperimentalWarning src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js"
+    "setup:workspaces": "cd frontend && npm install && cd ../backend && npm install && cd ..",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:python": "cd python && python ragas_server.py",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "start": "npm run start:backend",
+    "start:frontend": "cd frontend && npm run preview",
+    "start:backend": "cd backend && npm start",
+    "start:python": "cd python && python ragas_server.py"
+  
   },
   "dependencies": {
-    "axios": "^1.7.0",
-    "express": "^4.19.0",
-    "dotenv": "^16.4.5"
+    "axios": "^1.7.2",
+    "cors": "^2.8.5"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.12.7",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.4.5"
+    "@types/cors": "^2.8.19",
+    "@types/dotenv": "^6.1.1",
+    "@types/express": "^5.0.6",
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.5"
   }
 }

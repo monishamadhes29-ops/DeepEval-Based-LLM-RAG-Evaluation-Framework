@@ -4,6 +4,7 @@ dist/
 .env.local
 .env.*.local
 *.log
+llm-eval-providers/logs/
 .DS_Store
 venv/
 __pycache__/
