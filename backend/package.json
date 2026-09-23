@@ -1,7 +1,7 @@
 {
   "name": "llm-evaluation-framework-backend",
   "version": "1.0.0",
-  "description": "Testleaf LLM Evaluation Framework -evaluating LLMs and RAG systems using RAGAS and DeepEval",
+  "description": "LLM Evaluation Framework -evaluating LLMs and RAG systems using RAGAS and DeepEval",
   "keywords": [
     "llm",
     "evaluation",

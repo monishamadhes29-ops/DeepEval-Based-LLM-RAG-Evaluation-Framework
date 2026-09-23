@@ -78,7 +78,7 @@ function App() {
       <nav className="app-nav">
         <div className="nav-brand">
           <span className="nav-icon">🎯</span>
-          <span className="nav-title">Testleaf Evaluation Suite</span>
+          <span className="nav-title">Evaluation Suite</span>
         </div>
 
         <div className="nav-menu">

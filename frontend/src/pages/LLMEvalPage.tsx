@@ -9,7 +9,7 @@ export const LLMEvalPage: React.FC = () => {
       <div className="llm-eval-header">
         <div className="llm-eval-header-content">
           <div className="llm-eval-header-text">
-            <h1>Testleaf LLM Evaluation Framework</h1>
+            <h1>LLM Evaluation Framework</h1>
             <p className="llm-eval-subtitle"> RAG & LLM Evaluation Platform</p>
           </div>
         </div>

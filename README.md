@@ -133,7 +133,7 @@ curl -X POST http://localhost:3001/api/eval-only \
 }
 ```
 
-A full, importable request collection for every endpoint (single, batch, multi-turn, custom metrics, golden dataset) is included at [`Testleaf LLM Evaluation Framework - Full API Collection.postman_collection.json`](<Testleaf LLM Evaluation Framework - Full API Collection.postman_collection.json>) — import it into Postman to try the API without writing any code.
+A full, importable request collection for every endpoint (single, batch, multi-turn, custom metrics, golden dataset) is included at [`LLM Evaluation Framework - Full API Collection.postman_collection.json`](<LLM Evaluation Framework - Full API Collection.postman_collection.json>) — import it into Postman to try the API without writing any code.
 
 ## 📤 Export Options
 

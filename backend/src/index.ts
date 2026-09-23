@@ -40,7 +40,7 @@ app.use("/api", customMetricsRoutes);
 app.get("/health", (req: Request, res: Response) => {
   res.json({
     status: "healthy",
-    service: "Testleaf LLM Evaluation Framework",
+    service: "LLM Evaluation Framework",
     message: "DeepEval evaluation API is running",
     version: "1.0.0",
     environment: NODE_ENV,
@@ -60,7 +60,7 @@ app.get("/health", (req: Request, res: Response) => {
 // ============================================
 app.get("/api/status", (req: Request, res: Response) => {
   res.json({
-    service: "Testleaf LLM Evaluation Framework",
+    service: "LLM Evaluation Framework",
     version: "1.0.0",
     backend: {
       status: "running",
@@ -129,7 +129,7 @@ app.use((err: unknown, req: Request, res: Response, next: NextFunction) => {
 // ============================================
 app.listen(PORT, () => {
   console.log('🚀 ═══════════════════════════════════════════════════');
-  console.log('🤖 Testleaf LLM Evaluation Framework Backend');
+  console.log('🤖 LLM Evaluation Framework Backend');
   console.log('🚀 ═══════════════════════════════════════════════════');
   console.log(`📡 Server running on: http://localhost:${PORT}`);
   console.log(`🏥 Health check: http://localhost:${PORT}/health`);
